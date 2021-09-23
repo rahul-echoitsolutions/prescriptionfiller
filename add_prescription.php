@@ -395,7 +395,16 @@ foreach ($pharmList as $list) {
 
 
 
-                                <section><label  class="formLabel" for="urgency">Urgency</label><div><input type="text" class="text" name="urgency" value="<?php echo $prescriptions->urgency; ?>"/></div></section>
+                                <section>
+                                    <label  class="formLabel" for="urgency">Urgency</label>
+                                    <div>
+                                        <select name="urgency">
+                                            <option value="Normal" <?php echo $prescriptions->urgency == 'Normal' ? 'Selected="selected"': ''; ?>>Normal</option>
+                                            <option value="Urgent" <?php echo $prescriptions->urgency == 'Urgent' ? 'Selected="selected"': ''; ?>>Urgent</option>
+                                            <option value="Extremely Urgent" <?php echo $prescriptions->urgency == 'Extremely Urgent' ? 'Selected="selected"': ''; ?>>Extremely Urgent</option>
+                                        </select>
+                                    </div>
+                                </section>
 
 
 
