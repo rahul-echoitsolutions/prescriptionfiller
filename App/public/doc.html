@@ -1,0 +1,203 @@
+<html>
+<pre>
+
+URL is dev1.marpoletech.com
+
+
+<h1>ERROR CODES</h1>
+
+ERROR_NO_RECORD_FOUND = 1; // If you load a record and no record can be found
+ERROR_MISSING_REQUIRED_DATA = 2; // If you try to make a request and you are missing a required field(s)
+ERROR_SAVING_DATA = 3; // Server side error if the saving of a record fails for a server related issue
+ERROR_INVALID_EMAIL_ADDRESS = 4; // Error if a invalid email address is supplied. For example, test@blah
+ERROR_INVALID_PHONE_NUMBER = 5; // Error if a invalid phone number is provided. Has to be of the format 604-555-5555
+ERROR_INVALID_POSTAL_CODE = 6; // Error if a invalid postal code is provided. Has to be a Canadian postal code like so V3R2L1
+ERROR_INVALID_SEX = 7; // Invalid sex, has to be either M or F
+ERROR_EMAIL_ADDRESS_EXISTS = 8; // The email address of an account has be unique. Error if you try to save a new account using an email that already exists in the database
+ERROR_INCORRECT_USERNAME_OR_PASSWORD = 9; // Error if the login credentials provided are incorrect
+ERROR_NO_TOKEN_SENT = 10; // Error if no token is provided
+ERROR_TOKEN_IS_INVALID = 11; // Error if a token provided is invalid
+ERROR_CONNECTING_TO_FAX_SERVER = 12; // Could not connect to SRFax to fax out the prescription
+ERROR_CONNECTION_TIMEOUT = 13;
+FAX_QUEUED = 14; // fax successfully queued
+FAX_SENT = 15; // fax successfully sent
+FAX_FAILED = 16; // fax failed
+
+
+<h1>PRESCRIPTIONS:</h1>
+
+| id              | int(11)          
+| user_id         | int(10) unsigned 
+| pharmacy_id     | int(11)          
+| description     | varchar(2000)    
+| image_path      | varchar(128)     
+| fax_id          | varchar(16)      
+| updated_at      | timestamp        
+| created_at      | timestamp        
+| medical_notes   | varchar(2000)    
+| fax_status      | int(3)
+| image_data      | base_64 encoding of the picture of the prescription. JPG only
+
+<h3>Prescription - Load all for user</h3>
+/api/prescription/user_id/{user_id} (GET)
+So like this /prescription/user_id/123
+
+Example
+type: "GET",
+url: 'http://dev1.marpoletech.com/api/prescription/14',
+headers: { 'Authorization': 'Bearer {token}' }
+
+Response
+{"data":{"id":14,"user_id":"1","pharmacy_id":"2","description":" hi there ","extended_health":"test","image_path":"test","fax_id":"test","updated_at":"2017-02-16 00:27:29","created_at":"2017-02-16 00:27:29","medical_notes":"test", "fax_status": 1},"error":false,"error_code":0}
+
+
+
+<h3>Prescription - Load by id </h3>
+/api/prescription/{prescription_id} (GET)
+
+Example
+type: "GET",
+url: 'http://dev1.marpoletech.com/api/prescription/14',
+headers: { 'Authorization': 'Bearer {token}' }
+
+Response
+{"data":{"id":14,"user_id":"1","pharmacy_id":"2","description":" hi there ","extended_health":"test","image_path":"test","fax_id":"test","updated_at":"2017-02-16 00:27:29","created_at":"2017-02-16 00:27:29","medical_notes":"test", "fax_status": 1},"error":false,"error_code":0}
+
+
+<h3>Prescription - Create </h3>
+/api/prescription (POST)
+
+Example
+type: "POST"
+url: 'http://dev1.marpoletech.com/api/prescription',
+data: {"user_id":"1","pharmacy_id":"2","description":" hi there ","image_path":"test","fax_id":"test","updated_at":"2017-02-16 00:27:29","created_at":"2017-02-16 00:27:29","medical_notes":"test", "fax_status": 1, "image_data":"base64 encoding of the JPG prescription"}
+headers: { 'Authorization': 'Bearer {token}' }
+
+Response
+{"data":{"id":14,"user_id":"1","pharmacy_id":"2","description":" hi there ","extended_health":"test","image_path":"test","fax_id":"test","updated_at":"2017-02-16 00:27:29","created_at":"2017-02-16 00:27:29","medical_notes":"test", "fax_status": 14, "image_data":"base64 encoding of the JPG prescription"},"error":false,"error_code":0}
+
+
+
+
+
+<h1>PHARMACIES:</h1>
+
+| id           | int(11)     
+| phone_number | varchar(64) 
+| fax_number   | varchar(64) 
+| address      | varchar(256)
+| zip_code     | varchar(16) 
+| name         | varchar(255)
+
+Load by name - 
+/api/pharmacy/name/{name} (GET)
+
+Load by id
+/api/pharmacy/{pharmacy_id} (GET)
+
+
+
+
+
+<h1>USERS:</h1>
+
+| id                       
+| name                       | varchar(191)    
+| email                      | varchar(191)    
+| password                   | varchar(191)    
+| remember_token             | varchar(100)    
+| created_at                 | timestamp       
+| updated_at                 | timestamp       
+| date_of_birth              | varchar(32)     
+| sex                        | varchar(1)      
+| first_name                 | varchar(255)    
+| last_name                  | varchar(255)    
+| phone_number               | varchar(32)     
+| allergies                  | varchar(2000)   
+| medical_insurance_provider | varchar(255)    
+| carrier_number             | varchar(255)    
+| plan_number                | varchar(255)    
+| member_id                  | varchar(255)    
+| issue_number               | varchar(255)    
+| personal_health_number     | varchar(255)    
+| shots                      | varchar(2000)    
+| drugs                      | varchar(2000)    
+| vaccinations               | varchar(2000)    
+
+Display the shots, drugs and vaccinations on another screen titled "My Medical History"
+
+
+
+<h3>User - Create</h3>
+/user (POST)  
+
+Example:
+type: "POST",
+url: 'http://dev1.marpoletech.com/api/user',
+data: {email: 'ryantest@g.com', password: 'password', date_of_birth: '1980 12 12', sex: 'M', first_name: 'first', 
+	last_name: 'last', phone_number: '555-5555', notes: 'blah blah', "allergies":'test',"medical_insurance_provider":'test',
+	"carrier_number":'test',"plan_number":'test',"member_id":'test',"issue_number":'test',"personal_health_number":'test',
+	"shots":'test',"drugs":'test',"vaccinations":'test'},
+}
+
+Response
+{"data":{"id":2,"name":"ryantest@g.com","email":"ryantest@g.com","created_at":"2017-02-14 23:04:24","updated_at":"2017-02-19 04:27:38",
+	"date_of_birth":"1980 12 12","sex":"M","first_name":"first","last_name":"last","phone_number":"555-5555","allergies":'test',
+	"medical_insurance_provider":'test',"carrier_number":'test',"plan_number":'test',"member_id":'test',"issue_number":'test',
+	"personal_health_number":'test',"shots":'test',"drugs":'test',"vaccinations":'test'},
+"error":false,"error_code":0}
+
+
+
+<h3>User - Update</h3>
+
+/user/{user_id} (PUT)
+
+Example:
+type: "PUT",
+url: 'http://dev1.marpoletech.com/api/user/2',
+data: {email: 'ryantest@g.com', password: 'password', date_of_birth: '1980 12 12', sex: 'M', first_name: 'first', 
+	last_name: 'last', phone_number: '555-5555', notes: 'blah blah', "allergies":'test',"medical_insurance_provider":'test',
+	"carrier_number":'test',"plan_number":'test',"member_id":'test',"issue_number":'test',"personal_health_number":'test',
+	"shots":'test',"drugs":'test',"vaccinations":'test'},
+headers: { 'Authorization': 'Bearer {token}' }
+
+Response
+{"data":{"id":2,"name":"ryantest@g.com","email":"ryantest@g.com","created_at":"2017-02-14 23:04:24","updated_at":"2017-02-19 04:27:38",
+	"date_of_birth":"1980 12 12","sex":"M","first_name":"first","last_name":"last","phone_number":"555-5555","allergies":'test',
+	"medical_insurance_provider":'test',"carrier_number":'test',"plan_number":'test',"member_id":'test',"issue_number":'test',
+	"personal_health_number":'test',"shots":'test',"drugs":'test',"vaccinations":'test'},
+"error":false,"error_code":0}
+
+
+
+<h3>User - Login</h3>
+/oauth/token (POST)   
+Example here http://dev1.marpoletech.com/test_oath.html
+
+Example:
+type: "POST",
+url: 'http://dev1.marpoletech.com/oauth/token',
+data: {grant_type: 'password', client_id: '2', client_secret: 'lWxODhkqibWRX2knZqBlTLk5YrDqGTuBtgNKnyWU', username: 'ryantest@g.com', 
+	password: 'password', scope: ''},
+ }
+
+Response
+{"token_type":"Bearer","expires_in":31536000,"access_token":"{","refresh_token":"xYVlEEItpXPOYZ\/zx+rbkNl\/B8UTuILnQH8j6aTwNXjhysO2M0P7sp08ytQOH1+pbbo9gcRmNb0aGuwAcKFCewCpYl3MK5eH8VisiNHZ\/UGuHP2E+I7GMy\/jM\/7FOSXhOpK642EKyKIHaajHLhR8Kwim9cxCzzYywNlW3FDd4uYFICAlFRquRhjfULrvDOnHRs3hDEoxDigSoZcbK1dORvD4dU6VkFtIUayBQWc+ZKkfB1C79WAnE+eGLc2LLk8EzLSEH6YddqMIt+hd+SBaRDlWriWhMoXwA5WKeLCWnWSbkk99BLIX8+Yrf98mHTipSkXCLExHq9IH8+8P\/3Qn7ontVCQbyF1+OXkM5SjImTml8DgOIw9T5aZaoIHtGV6o0vmwDtG3LlZZnbfTERTO1sq\/j\/6qJ\/JwFvuPhUlft93jB3t02wz734Mvy+rp63tX7IPBOpO8sNT9l31G40uuYPaiTXDF\/x1M7Ct0LbpafXhSOhPb0hHbXtyFWtFPSRqvr0L8y9jB8ipNsBzvHQDL2lo9\/yFQn4jb62Xnywa\/NnlShsq\/UZf3v21XW5TwolZ7WpaOtT93BxQ+kv5TCilkmZlP1twV\/2PGB8kxO2isfLpBfXJU0T78ghNzJ2vBSm\/WswajBjUqSHMFy7ddBtfUsNV5l29cwaP1COWNU9apd6I="}
+
+
+
+<h3>User - Reset Password Email</h3>
+Example here http://dev1.marpoletech.com/test_password_reset.html
+
+Example:
+type: "POST",
+url: 'http://dev1.marpoletech.com/api/reset_password',
+data: {email: 'myemail@email.com'}
+
+
+Response
+Ignore the response. It will send an email to their email account which launches a webpage that allows them to reset their password
+
+</pre>
+</html>

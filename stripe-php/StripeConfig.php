@@ -1,0 +1,11 @@
+<?php 
+//define("STRIPE_SECRET_KEY", "sk_test_ZzuZJ0rzZ5NjsfDsRUHQE7bJ00aZec79Gt");
+//define("STRIPE_PUBLISHABLE_KEY", "pk_test_r3ERcxrZJf5PQlLgdv9UHWNZ00jjdSElcp");
+
+
+define("STRIPE_SECRET_KEY", "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");
+define("STRIPE_PUBLISHABLE_KEY", "pk_live_w5hwg6SzEFHMI1qeXhU648ZE00PfKAuygs");
+
+
+
+?>

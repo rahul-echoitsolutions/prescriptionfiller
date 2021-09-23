@@ -1,0 +1,6 @@
+if you pull in new pharmacy data remove ones without fax numbers and update the fax numbers so they work with the fax api
+update pharmacy set fax_number = replace(fax_number, '-', '');
+update pharmacy set fax_number = concat(1, fax_number);
+
+
+update .env file and change the url to whatever url they chose

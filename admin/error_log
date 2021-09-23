@@ -1,0 +1,185 @@
+[24-May-2020 04:56:46 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function echonumber_format() in /home/carleado/public_html/admin/submit_broker_quotes.php:213
+Stack trace:
+#0 {main}
+  thrown in /home/carleado/public_html/admin/submit_broker_quotes.php on line 213
+[30-Jun-2020 20:46:42 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[30-Jun-2020 20:46:50 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[30-Jun-2020 20:47:01 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[30-Jun-2020 20:51:56 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[13-Jul-2020 19:35:51 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required '../../Mobile-Detect-2.8.34/Mobile_Detect.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/carleado/public_html/admin/includes/main.php on line 63
+[14-Jul-2020 07:56:19 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/carleado/public_html/admin/dealer_quote_requests.php on line 330
+[17-Jul-2020 22:17:52 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/carleado/public_html/admin/left_navigation.php on line 232
+[25-Jul-2020 21:43:52 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/carleado/public_html/stripe-php/lib/Util/Util.php on line 48
+[25-Jul-2020 21:44:26 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/carleado/public_html/stripe-php/lib/Util/Util.php on line 48
+[26-Jul-2020 03:36:10 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/carleado/public_html/stripe-php/lib/Util/Util.php on line 48
+[26-Jul-2020 03:36:16 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/carleado/public_html/stripe-php/lib/Util/Util.php on line 48
+[26-Jul-2020 03:36:20 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/carleado/public_html/stripe-php/lib/Util/Util.php on line 48
+[26-Jul-2020 03:42:26 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/carleado/public_html/stripe-php/lib/Util/Util.php on line 48
+[26-Jul-2020 03:54:18 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '*' in /home/carleado/public_html/stripe-php/lib/HttpClient/CurlClient.php on line 461
+[26-Jul-2020 03:54:21 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '*' in /home/carleado/public_html/stripe-php/lib/HttpClient/CurlClient.php on line 461
+[26-Jul-2020 03:54:22 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '*' in /home/carleado/public_html/stripe-php/lib/HttpClient/CurlClient.php on line 461
+[26-Jul-2020 03:57:48 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '*' in /home/carleado/public_html/stripe-php/lib/HttpClient/CurlClient.php on line 461
+[27-Jul-2020 07:15:44 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /home/carleado/public_html/admin/formqueries.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/carleado/public_html/admin/formqueries.php on line 63
+[27-Jul-2020 19:38:11 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[27-Jul-2020 19:51:14 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /home/carleado/public_html/admin/formqueries.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/carleado/public_html/admin/formqueries.php on line 63
+[27-Jul-2020 19:52:21 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /home/carleado/public_html/admin/formqueries.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/carleado/public_html/admin/formqueries.php on line 63
+[27-Jul-2020 19:53:20 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[27-Jul-2020 19:53:26 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[28-Jul-2020 17:27:18 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/carleado/public_html/admin/manage_dealers.php on line 401
+[28-Jul-2020 11:27:30 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /home/carleado/public_html/admin/formqueries.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/carleado/public_html/admin/formqueries.php on line 63
+[28-Jul-2020 11:47:40 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[28-Jul-2020 12:42:12 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transactions::getlist(), 0 passed in /home/carleado/public_html/admin/dealer_transactions.php on line 15 and exactly 1 expected in /home/carleado/public_html/includes/lib/classes/a/transactions.php:69
+Stack trace:
+#0 /home/carleado/public_html/admin/dealer_transactions.php(15): transactions->getlist()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/transactions.php on line 69
+[29-Jul-2020 16:24:05 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'transactions' not found in /home/carleado/public_html/admin/dealer_transactions.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/carleado/public_html/admin/dealer_transactions.php on line 10
+[02-Aug-2020 09:58:42 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function sendBuyerQuoteNotice() in /home/carleado/public_html/includes/lib/classes/a/dealer_quotes.php:84
+Stack trace:
+#0 /home/carleado/public_html/admin/submit_dealer_quotes.php(86): quotes->save()
+#1 {main}
+  thrown in /home/carleado/public_html/includes/lib/classes/a/dealer_quotes.php on line 84
+[02-Aug-2020 10:10:34 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function sendBuyerQuoteNotice() in /home/carleado/public_html/admin/submit_dealer_quotes.php:98
+Stack trace:
+#0 {main}
+  thrown in /home/carleado/public_html/admin/submit_dealer_quotes.php on line 98
+[07-Sep-2020 10:31:57 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:39:00 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:39:03 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:39:05 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:39:19 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:40:33 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:40:35 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:41:41 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:41:43 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:41:44 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/alergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:46:17 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/allergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:46:19 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/allergy_descriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/alergy_descriptions.php on line 4
+[07-Sep-2020 10:58:34 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function save() on null in /home/pfill/public_html/admin/manage_allergy_descriptions.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_allergy_descriptions.php on line 23
+[07-Sep-2020 11:03:59 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function save() on null in /home/pfill/public_html/admin/manage_allergy_descriptions.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_allergy_descriptions.php on line 26
+[07-Sep-2020 11:19:29 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function save() on null in /home/pfill/public_html/admin/manage_allergy_descriptions.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_allergy_descriptions.php on line 26
+[07-Sep-2020 11:20:47 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function save() on null in /home/pfill/public_html/admin/manage_allergy_descriptions.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_allergy_descriptions.php on line 26
+[07-Sep-2020 11:21:52 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::save() in /home/pfill/public_html/admin/manage_allergy_descriptions.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_allergy_descriptions.php on line 26
+[07-Sep-2020 18:39:11 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'health' not found in /home/pfill/public_html/admin/health.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/health.php on line 7
+[08-Sep-2020 03:41:48 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 82
+[08-Sep-2020 03:44:12 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 88
+[08-Sep-2020 03:44:16 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 88
+[08-Sep-2020 03:47:46 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 89
+[08-Sep-2020 03:47:48 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 89
+[08-Sep-2020 03:50:44 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 90
+[08-Sep-2020 03:51:27 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 92
+[08-Sep-2020 03:51:31 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 92
+[08-Sep-2020 03:52:01 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 92
+[08-Sep-2020 03:52:46 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 92
+[08-Sep-2020 03:52:48 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/pfill/public_html/admin/manage_health.php on line 92
+[07-Sep-2020 23:12:07 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/insurers.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/insurers.php on line 4
+[08-Sep-2020 00:14:44 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/prescriptions.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/prescriptions.php on line 4
+[08-Sep-2020 00:21:10 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function save() on null in /home/pfill/public_html/admin/manage_prescriptions.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_prescriptions.php on line 44
+[08-Sep-2020 00:22:19 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::save() in /home/pfill/public_html/admin/manage_prescriptions.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_prescriptions.php on line 44
+[08-Sep-2020 00:48:16 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../includes/lib/classes/a/review_reasons.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/pfill/public_html/admin/review_reasons.php on line 4
+[30-Sep-2020 01:02:35 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'allergy_description' not found in /home/pfill/public_html/admin/allergies.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/allergies.php on line 12
+[30-Sep-2020 01:19:21 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Cannot use object of type allergy_descriptions as array in /home/pfill/public_html/admin/allergies.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/allergies.php on line 89
+[30-Sep-2020 02:43:58 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/pfill/public_html/admin/physicians.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/physicians.php on line 81
+[30-Sep-2020 02:45:02 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/pfill/public_html/admin/physicians.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/physicians.php on line 8
+[30-Sep-2020 03:52:22 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function state_prov() in /home/pfill/public_html/admin/manage_physicians.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_physicians.php on line 135
+[30-Sep-2020 03:55:34 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function state_prov() in /home/pfill/public_html/admin/manage_physicians.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_physicians.php on line 135
+[30-Sep-2020 03:57:38 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function state_prov() in /home/pfill/public_html/admin/manage_physicians.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/pfill/public_html/admin/manage_physicians.php on line 135
+[30-Sep-2020 04:01:26 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function state_prov(), 3 passed in /home/pfill/public_html/admin/manage_physicians.php on line 136 and exactly 5 expected in /home/pfill/public_html/includes/lib/functions/statesProv.php:24
+Stack trace:
+#0 /home/pfill/public_html/admin/manage_physicians.php(136): state_prov('prov_state', '', 'province')
+#1 {main}
+  thrown in /home/pfill/public_html/includes/lib/functions/statesProv.php on line 24
+[11-Oct-2020 09:25:20 America/Los_Angeles] PHP Parse error:  syntax error, unexpected end of file in /home/pfill/public_html/admin/left_navigation.php on line 339
+[15-Feb-2021 17:16:12 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 20480 bytes) in /home/pfill/web.prescriptionfiller.com/includes/lib/functions/database.php on line 108

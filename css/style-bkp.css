@@ -1,0 +1,390 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+	font-weight: 300;
+	color: #000;
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+.appDiv {
+	height: 3310px;
+	overflow: hidden;
+}
+strong,
+b {
+	font-weight: 600;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul,
+ol {
+	list-style: none;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.list li {
+	list-style: disc !important;
+	padding-left: 10px !important;
+	margin-left: 40px !important;
+}
+a {
+	transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+}
+a:hover {
+	color: navy;
+}
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+i {
+	font-size: 1.1em;
+}
+em {
+	/* font-style:normal;*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	margin-top: 0;
+}
+.head1,
+.head2,
+.head3,
+.head4,
+.head5 {
+	font-weight: 600;
+	margin-top: 0;
+}
+
+
+
+
+.scrollToTop {
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, .6) !important;
+	text-align: center;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	background: url('../images/up-arrow.png') no-repeat;
+	background-position: center;
+	border-radius: 50%;
+}
+.scrollToTop:hover {
+	text-decoration: none;
+}
+
+
+/* Navigation Styles */
+
+header.light nav {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+ul.main-nav {
+	list-style-type: none;
+	padding: 0px;
+	font-size: 0px;
+	width: 25%;
+	float: left;
+}
+.header_right_nav {
+	width: 70%;
+	float: right;
+	padding: 5px 0px 0px;
+}
+ul.main-nav > li {
+	display: inline-block;
+	padding: 0;
+}
+ul.main-nav > li > a {
+	display: block;
+	padding: 20px 30px 20px 30px;
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	box-sizing: border-box;
+	background-color: #106835;
+}
+ul.main-nav > li:hover {
+	background-color: #000;
+}
+ul.main-nav > li:hover > a {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+ul.main-nav > li ul.menu-bar {
+	margin: 0px;
+	padding: 20px 0 10px;
+	list-style-type: none;
+	display: block;
+}
+ul.main-nav > li ul.menu-bar > li {
+	padding: 2px 0;
+}
+ul.main-nav > li ul.menu-bar > li > a {
+	font-size: 14px;
+}
+
+/* Menu Icons for Devices*/
+
+.menu-bar li {
+	display: inline-block;
+	padding: 0px 20px !important;
+}
+.menu-bar li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #1e404c;
+	min-width: 150px;
+	color: #fff !important;
+	padding: 12px 0px;
+}
+.dropdown-content ul li {
+	display: block;
+	text-align: left !important;
+	margin-bottom: 0px !important;
+	padding-bottom: 0px;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+	top: 100%;
+}
+.dropdown-content ul {
+	padding-left: 0px;
+	color: #fff !important;
+}
+.dropdown-content ul li a {
+	padding: 0px !important;
+	color: #fff !important;
+}
+.sub-menu-block .menu-bar {
+	padding-bottom: 0px !important;
+}
+.dropdown-content ul li {
+	padding: 10px 10px !important;
+	border-bottom: 1px solid #305462;
+}
+.form-abc.mobile_form .middle-form {
+	width: 100% !important;
+	top: 15px !important;
+}
+
+
+
+/* The side navigation menu carleado */
+
+#mySidenav .menu-bar li {
+	display: block
+}
+#mySidenav .dropdown-toggle::after {
+	display: none
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	/* 0 width - change this with JavaScript */
+	position: fixed;
+	/* Stay in place */
+	z-index: 2;
+	/* Stay on top */
+	top: 74px;
+	left: 0;
+	background-color: #2681db;
+	/* Black*/
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 70px;
+	/* Place content 60px from the top */
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+
+.sidenav a {
+	padding: 15px 8px 15px 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s
+}
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 10px;
+	right: 2px;
+	font-size: 35px;
+	margin-left: 0;
+	color: #fff;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+.toggle_menu {
+	font-size: 30px;
+	color: #000;
+	left: 25px;
+	position: fixed;
+	top: 32px;
+	display: none;
+	z-index: 999999;
+	cursor: pointer;
+}
+.mob-menus {
+	display: none;
+}
+.col-md-4 .panel-group > a > div,
+.col-md-4 .panel-group .right-column-form {
+	width: 100%!important;
+}
+/*        Go Mortgages css        */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	
+	/*
+  
+  .ic.menu:focus ~ .ic.close { opacity: 1.0; z-index : 21;  }
+  .ic.close:focus { opacity: 0; }
+  */
+	
+	
+	ul.main-nav > li > a:after {
+		display: none;
+	}
+	ul.main-nav > li:first-child {
+		border-radius: 0px;
+	}
+	ul.main-nav > li {
+		display: block;
+		border-bottom: 1px solid #444;
+	}
+	ul.main-nav > li > a {
+		font-weight: 600;
+	}
+	ul.main-nav > li ul.menu-bar > li a {
+		color: #eee;
+		font-size: 14px;
+	}
+	.sub-menu-head {
+		font-size: 16px;
+	}
+	ul.main-nav > li:hover {
+		background-color: transparent;
+	}
+	ul.main-nav > li:hover > a {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.ic.menu:focus ~ ul.main-nav > li > div.sub-menu-block {
+		border-left: 0px solid #ccc;
+		border-right: 0px solid #ccc;
+		border-bottom: 0px solid #ccc;
+		position: relative;
+		visibility: visible;
+		opacity: 1.0;
+	}
+	.sub-menu-block {
+		padding: 0px 25px;
+		width: 100%;
+	}
+	
+	
+	
+	.dropdown-content ul li {
+		padding-left: 0px !important;
+	}
+	.mob-menus,
+	.toggle_menu {
+		display: block;
+	}
+	
+	
+	#mySidenav .sidenav a {
+		padding: 8px 8px 8px 20px;
+	}
+	#mySidenav .dropdown-content {
+		left: 0px;
+		background: transparent;
+		width: 100%;
+		text-indent: 30px;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown-content ul li {
+		display: block;
+		border-bottom: 1px solid #3f3e3e !important;
+	}
+	.dropdown-content ul li:last-child {
+		border-bottom: 0!important
+	}
+	.dropdown-content ul li a {
+		padding: 7px 0px !important;
+	}
+	
+}
+
+@
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}

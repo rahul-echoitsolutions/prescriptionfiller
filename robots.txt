@@ -1,0 +1,22 @@
+
+#User-agent: *
+Disallow: /
+#
+#Disallow: /cgi-bin/
+#
+#Disallow: /admin/
+#
+#
+#Disallow: /coming-soon/
+#
+#Disallow: /cron/
+#
+#Disallow: /feeds/
+#
+#
+#Disallow: /bigpicture-master/
+#
+#Disallow: /calculators/
+#
+
+

@@ -1,0 +1,127 @@
+<?php
+	//public pages defination
+	define('FILENAME_DEFAULT','index.php');
+	define('FILENAME_REGISTER','register.php');
+	define('FILENAME_THANKYOU','thankyou.php');
+	define('FILENAME_DEALS','deals.php');
+	define('FILENAME_DEALDETAILS','dealdetails.php');
+	define('FILENAME_EVENTDETAILS','eventdetails.php');
+	define('FILENAME_CALENDAR','calendar.php');
+	define('FILENAME_FORUM','forum.php');
+	define('FILENAME_FORUM_THREADS','forumthreads.php');
+	define('FILENAME_FORUM_POST','forumpost.php');
+	define('FILENAME_SHARES','shares.php');
+	define('FILENAME_BLOGS','blogs.php');
+	define('FILENAME_BLOGDETAILS','blogdetails.php');
+  define('FILENAME_SEARCHS','searchresult.php');
+  define('FILENAME_MERCHANTREGISTER','merchantregister.php');
+  define('FILENAME_MERCHANTTHANK','mthankyou.php');
+  define('FILENAME_LANDINGSIGNUP','landingsignup.php');
+  define('FILENAME_LANDINGSIGNUPTHANKYOU','landingsignupthankyou.php');
+  	define('FILENAME_INBOX','m/inbox.php');
+  	define('FILENAME_MESSAGEDETAILS','m/messagedetails.php');
+  	define('FILENAME_REPLY','m/popup/replyuser.php');
+  	
+  
+	define('FILENAME_LOGOUT','logout.php');
+	
+	//backend pages defination
+	define('FILENAME_WEBSTATS_DAILYSUMMARY','a/webstats/dailysummary.php');
+	define('FILENAME_WEBSTATS_FILETYPE','a/webstats/filetype.php');
+	define('FILENAME_WEBSTATS_MONTHLYHISTORY','a/webstats/monthlyhistory.php');
+	define('FILENAME_WEBSTATS_PAGESURL','a/webstats/pagesurl.php');
+	define('FILENAME_WEBSTATS_VISITSDURATION','a/webstats/visitsduration.php');
+	define('FILENAME_TICKETS','a/tickets/ticketlist.php');
+	define('FILENAME_ADMIN_USERS','a/admin/users.php');
+	define('FILENAME_ADMIN_STATUS','a/admin/status.php');
+	define('FILENAME_ACCOUNTS_MEMBERS','a/accounting/members.php');
+	define('FILENAME_ACCOUNTS_MERCHANTS','a/accounting/merchants.php');
+	define('FILENAME_ACCOUNTS_TRANSACTIONS','a/accounting/transactions.php');
+	define('FILENAME_ACCOUNTS_TAX','a/accounting/tax.php');
+	define('FILENAME_ACCOUNTS_GATEWAY','a/accounting/gateway.php');
+	define('FILENAME_MEMBERS','a/members.php');
+	define('FILENAME_SLIDERS','a/slider.php');
+	define('FILENAME_SPOTLIGHT','a/spotlight.php');
+	define('FILENAME_HOWITWORKS','a/howitworks.php');
+	define('FILENAME_MERCHANTS','a/merchants.php');
+	define('FILENAME_CMS','a/cms.php');
+	define('FILENAME_CMS_HOME','a/homecms.php');
+	define('FILENAME_CMS_REG','a/regcms.php');
+	define('FILENAME_CMS_LEGAL','a/legalcms.php');
+	define('FILENAME_CMS_METATAGS','a/metatags.php');
+	define('FILENAME_CATEGORY','a/categories.php');
+	define('FILENAME_SHARECATEGORY','a/sharecategories.php');
+	define('FILENAME_MERGE_FIELDS','a/mergefields.php');
+	define('FILENAME_EMAIL_TYPES','a/emailtypes.php');
+	define('FILENAME_EMAIL_TEMPLATES','a/emailtemplates.php');
+	define('FILENAME_BLOGSLIST','a/blogs.php');
+	define('FILENAME_BLOGSCATEGORY','a/blogcategory.php');
+	define('FILENAME_FORUMCATEGORIES','a/forumcategories.php');
+	define('FILENAME_FORUMSLIST','a/forums.php');
+	define('FILENAME_CALENDARLIST','a/calendar.php');
+	define('FILENAME_MERCHANTDEALS','a/merchantdeals.php');
+	define('FILENAME_DEALCATEGORIES','a/dealcategories.php');
+	define('FILENAME_SHARESLIST','a/shares.php');
+	define('FILENAME_EVENTCATEGORY','a/eventcategories.php');
+	define('FILENAME_POSTEVENT','m/postevent.php');
+	define('FILENAME_NEWDEAL','m/createdeal.php');
+	define('FILENAME_NEWSHARE','m/createshare.php');
+	
+	
+	define('FILENAME_POPUP_STATUS','a/admin/popup/statusdetails.php');
+	define('FILENAME_POPUP_CATEGORY','a/popup/categorydetails.php');
+ 	define('FILENAME_POPUP_DEAL','m/popup/dealdetails.php');
+  define('FILENAME_POPUP_EMAILTEMPLATEDETAILS','a/popup/emailtemplatedetails.php');
+  define('FILENAME_POPUP_EMAILTEMPLATEPREVIEW','a/popup/emailtemplatepreview.php');
+	define('FILENAME_POPUP_EMAIL_SETTINGS','a/popup/email_smtp_settings.php');
+	define('FILENAME_POPUP_MERGE_FIELDS','a/popup/fixed_merge_fields.php');
+	define('FILENAME_POPUP_MEMBERDETAILS','a/popup/userdetails.php');
+	define('FILENAME_POPUP_BLOGSCATEGORY','a/popup/blogcategorydetails.php');
+	define('FILENAME_POPUP_BLOGS','a/popup/blogdetails.php');
+	define('FILENAME_POPUP_CREATETICKET','a/tickets/popup/createticket.php');
+	define('FILENAME_POPUP_REPLYTICKET','a/tickets/popup/replyticket.php');
+	define('FILENAME_POPUP_TICKETDETAILS','a/tickets/popup/ticketdetails.php');
+	define('FILENAME_POPUP_REPLYDETAILS','a/tickets/popup/replydetails.php');
+	define('FILENAME_POPUP_LOCATION','a/popup/locationsetting.php');
+	define('FILENAME_POPUP_FORUMCATEGORYDETAILS','a/popup/forumcategorydetails.php');
+  define('FILENAME_POPUP_FORUM','a/popup/forumdetails.php');
+  define('FILENAME_POPUP_FORUMDETAILS','a/popup/forumposts.php');
+  define('FILENAME_POPUP_FORUMTOPIC','a/popup/forumaddtopic.php');
+  define('FILENAME_POPUP_FORUMPOST','a/popup/forumaddpost.php');
+  define('FILENAME_POPUP_FORUMPOSTVIEW','a/popup/forumpostview.php');
+  define('FILENAME_POPUP_FORUMCREATE','a/popup/forumaddtopic.php');
+  define('FILENAME_POPUP_FLAGEVENTS','a/popup/flagevents.php');
+  define('FILENAME_POPUP_FLAGEVENTDETAILS','a/popup/flageventdetails.php');
+  define('FILENAME_POPUP_DEALPOSTDETAILS','a/popup/dealpostdetails.php');
+  define('FILENAME_POPUP_DEALSTATS','a/popup/dealstats.php');
+  define('FILENAME_POPUP_DEALCATEGORYDETAILS','a/popup/dealcategorydetails.php');
+  define('FILENAME_POPUP_EVENTCATEGORY','a/popup/eventcategorydetails.php');
+  define('FILENAME_POPUP__NEWEVENT','m/popup/createevent.php');
+    define('FILENAME_POPUP_SHARECATEGORY','a/popup/sharecategorydetails.php');
+  define('FILENAME_POPUP_CONTACTUSER','m/popup/contactuser.php');
+  
+	
+	//frontend pages defination
+	define('FILENAME_MYACCOUNT','m/accountsettings.php');
+	define('FILENAME_MYPROFILE','viewprofile.php');
+	define('FILENAME_MERCHANTPROFILE','viewmprofile.php');
+	define('FILENAME_MYPROFILEEDIT','m/profiledetails.php');
+	define('FILENAME_MERCHANTPROFILEEDIT','m/mprofiledetails.php');
+	define('FILENAME_BUYHISTORY','m/buyhistory.php');
+	define('FILENAME_FEEDBACK','m/feedback.php');
+	define('FILENAME_CALENDAR_DAY','m/daycalendar.php');
+	define('FILENAME_CALENDAR_WEEK','m/weekcalendar.php');
+	define('FILENAME_CALENDAR_MONTH','m/monthcalendar.php');
+	define('FILENAME_SUPPORT','m/tickets/ticketlist.php');
+	define('FILENAME_SUPPORT_CREATETICKET','m/tickets/createticket.php');
+	define('FILENAME_SUPPORT_TICKETDETAILS','m/tickets/ticketdetails.php');
+	define('FILENAME_SUPPORT_REPLYTICKET','m/tickets/replyticket.php');
+	define('FILENAME_SUPPORT_REPLYDETAILS','m/tickets/replydetails.php');
+	define('FILENAME_DASHBOARD','dashboard.php');
+	define('FILENAME_MESSAGE_SEND','m/popup/sendmessage.php');
+	define('FILENAME_POPUP_CUSTOMEREVENT','m/popup/eventdetails.php');
+	define('FILENAME_POPUP_CUSTOMERMOREEVENT','m/popup/eventmoredetail.php');
+	define('FILENAME_POPUP_EVENTDETAILLIST','m/popup/EventDetailList.php');	
+  define('FILENAME_ADDMERCHANTDEALS','m/merchantdeals.php');
+  define('FILENAME_USEREVENT','m/user_events.php');
+?>

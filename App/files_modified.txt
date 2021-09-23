@@ -1,0 +1,2 @@
+/var/www/prescription_app/your-project/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php  function sendResetResponse
+/var/www/prescription_app/your-project/resources/lang/en/passwords.php     reset text

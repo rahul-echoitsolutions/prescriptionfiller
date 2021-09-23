@@ -1,0 +1,1 @@
+<footer>Copyright &copy; by <?php echo THIS_DOMAIN;?> 2019 <?php if(date("Y")>2019){ echo " - ".date("Y");}?></footer>

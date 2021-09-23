@@ -1,0 +1,6 @@
+- handle error if email alreaday exists when creating/saving user account
+- add validation and more return codes
+- make load prescriptions use token instead
+- when loading an object by id and its not found it currently throws exception (handle thsi better)
+- delete prescriptions from faxing service after failed or successfully sent
+
