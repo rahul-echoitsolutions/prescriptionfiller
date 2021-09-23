@@ -32,6 +32,7 @@ class members {
     var $allergies = '';
     var $activated = '';
     var $table_name = 'users';
+    var $member_table = 'members';
 
     function save() {
 
@@ -204,6 +205,22 @@ class members {
             return true;
         } else
             return false;
+    }
+    
+    function getExtendedHealth($id) {
+       
+        $sql = "select * from {$this->member_table}  where member_id='$id'";
+        $sqlresult = tep_db_query($sql);
+        $sqlarray = tep_db_fetch_array($sqlresult);
+        
+        $result = '';
+        
+        if ($sqlarray) {
+            $result .= isset($sqlarray['medical_insurance_provider']) ? $sqlarray['medical_insurance_provider'] . ' ' : '';
+            $result .= isset($sqlarray['carrier_number']) ? $sqlarray['carrier_number'] : '';
+        }
+        
+        return $result;
     }
 
 ############### END OF CLASS DEFINITION #######################################

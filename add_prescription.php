@@ -31,6 +31,16 @@ if ($prescription_id > 0)
 
 $members->load($_SESSION['user_id']);
 
+    // Get extended health value from USERS table
+    $extendedHealth = $members->medical_insurance_provider . ' ' . $members->carrier_number;
+
+    if (!empty($prescription->extended_health)){
+        $extendedHealth = $prescription->extended_health;
+    }
+   
+    // Get extended health value from MEMBERS table
+    $extendedHealth = $members->getExtendedHealth($_SESSION['user_id']);
+
 $rooturl = "https://prescriptionfiller.com/";
 
 require_once("Mobile-Detect-2.8.34/Mobile_Detect.php");
@@ -363,7 +373,7 @@ foreach ($pharmList as $list) {
 
                                 <section><label  class="formLabel" for="description">Description</label><div><input type="text" class="text" name="description" value="<?php echo $prescriptions->description; ?>"/></div></section>
 
-                                <section><label  class="formLabel" for="extended_health">Extended Health</label><div><input type="text" class="text" name="extended_health" value="<?php echo $prescriptions->extended_health; ?>"/></div></section>
+                                <section><label  class="formLabel" for="extended_health">Extended Health</label><div><input type="text" class="text" name="extended_health" value="<?php echo $extendedHealth; ?>"/></div></section>
 
                                             <?php
                                             /*
