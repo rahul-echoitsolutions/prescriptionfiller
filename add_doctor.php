@@ -47,13 +47,13 @@ if($action!='') {
    
     
 
-  $testArray=$_POST['clinic'];
-    
-    $doctor_additional_id=$testArray[0].",".$testArray[1].",".$testArray[2].",".$testArray[3];
-    
-    
-    
-    $doctor_additional_id=trim($doctor_additional_id,",");
+//  $testArray=$_POST['clinic'];
+    $doctor_additional_id = '';
+//    $doctor_additional_id=$testArray[0].",".$testArray[1].",".$testArray[2].",".$testArray[3];
+//    
+//    
+//    
+//    $doctor_additional_id=trim($doctor_additional_id,",");
     
       
         $physicians->license_number = $request->postvalue('license_number');
@@ -225,27 +225,29 @@ if($message=="success"){?>
 ?>
 
 
-<section><label  class="formLabel" for="doctor_additional_id">Clinics<span><br />Click on multiple clinics if applicable</span></label><div>
+<section>
+<!--    <label  class="formLabel" for="doctor_additional_id">Clinics<span><br />Click on multiple clinics if applicable</span></label>
+    <div>
 
 
-<select name="clinic" multiple="">
+<select name="clinic" multiple="">-->
 <?php
-$clinicList=$doctor_additional->getlist();
-   
-foreach($clinicList as $list){
-    // note - dash is deliberate to prevent the first id number from returning position 0 
-    $testit="-,".$physicians->doctor_additional_id.",";
-    $testID=",".$list['id'].",";
-    $selected=(strpos($testit,$testID ))? "selected" :"";
-   
-   echo "<option value='".$list['id']."' $selected>".$list['office_name']." - ".$list['office_street']." - ".$list['office_city']."</option> ";
-}
+//$clinicList=$doctor_additional->getlist();
+//   
+//foreach($clinicList as $list){
+//    // note - dash is deliberate to prevent the first id number from returning position 0 
+//    $testit="-,".$physicians->doctor_additional_id.",";
+//    $testID=",".$list['id'].",";
+//    $selected=(strpos($testit,$testID ))? "selected" :"";
+//   
+//   echo "<option value='".$list['id']."' $selected>".$list['office_name']." - ".$list['office_street']." - ".$list['office_city']."</option> ";
+//}
 ?>
- </select>
+ <!--</select>-->
 
 
-
-</div></section>
+<!--
+</div></section>-->
 <section><label  class="formLabel" for="first_name">First Name *</label><div><input type="text" class="text" name="first_name" value="<?php echo $physicians->first_name; ?>" required/></div></section>
 <section><label  class="formLabel" for="last_name">Last Name *</label><div><input type="text" class="text" name="last_name" value="<?php echo $physicians->last_name; ?>" required/></div></section>
 <section><label  class="formLabel" for="address">Address</label><div><input type="text" class="text" name="address" value="<?php echo $physicians->address; ?>"/></div></section>
