@@ -66,7 +66,7 @@ $xxi = 0;
 foreach ($pharmlist[0] as $key => $pharm) {
 
     $pharmacies->load($pharm);
-    echo "<tr><td>" . $pharmacies->name . "</td><td>" . $pharmacies->address . "</td><td>" . $pharmacies->city . "</td><td>" . $pharmacies->phone_number . "</td></tr>";
+    echo "<tr><td><a href=my_prescription.php?pharmacy=". $pharmacies->id ." target=_blank >" . ucwords($pharmacies->name) . "</a></td><td>" . $pharmacies->address . "</td><td>" . $pharmacies->city . "</td><td>" . $pharmacies->phone_number . "</td></tr>";
 }
 ?>
                     </table>

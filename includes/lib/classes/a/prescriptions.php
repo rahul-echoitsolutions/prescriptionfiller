@@ -205,6 +205,36 @@ class prescriptions {
         } else
             return "empty";
     }
+    
+    function getPrescriptionByPharmacy($pharmacy_id){
+        
+        $result = array();
+        
+        $sql = "SELECT * FROM {$this->table_name}  WHERE user_id =" . $_SESSION['user_id'] . " AND pharmacy_id = " . $pharmacy_id;
+
+        $sqlresult = tep_db_query($sql);
+        
+         while ($query_result = tep_db_fetch_assoc($sqlresult)) {
+            array_push($result, $query_result);
+        }
+        
+        return $result;
+    }
+    
+    function getPrescriptionByPhysician($physician_id){
+        
+        $result = array();
+        
+        $sql = "SELECT * FROM {$this->table_name}  WHERE user_id =" . $_SESSION['user_id'] . " AND physician_id = " . $physician_id;
+
+        $sqlresult = tep_db_query($sql);
+        
+         while ($query_result = tep_db_fetch_assoc($sqlresult)) {
+            array_push($result, $query_result);
+        }
+       
+        return $result;         
+    }
 
 ############### END OF CLASS DEFINITION #######################################
 }
